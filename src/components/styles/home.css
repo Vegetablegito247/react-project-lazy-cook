@@ -498,6 +498,11 @@ header {
         display: none;
     }
 
+    .home-head .head-text button,
+    .kitchen-utensils .kit-ute .kit-ute-texts button {
+        font-weight: 400;
+    }
+
     .exp {
         padding: 6rem 30px;
     }

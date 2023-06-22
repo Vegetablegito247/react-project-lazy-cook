@@ -1,0 +1,96 @@
+:root {
+    --primary: hsl(13, 85%, 52%);
+    --secondary: hsl(0, 78%, 50%);
+    --intermediate: rgb(0, 149, 35);
+}
+
+.navbar {
+    width: 100%;
+    padding: 20px 15px !important;
+    background-color: var(--intermediate);
+}
+
+.navbar .logo {
+    display: flex;
+}
+
+.navbar .logo h3 {
+    font-size: 20px;
+    font-weight: 800;
+    margin: 0 1rem 0 0;
+}
+
+.navbar .logo .uten {
+    font-size: 25px;
+    align-self: center;
+    color: var(--secondary);
+}
+
+.navbar ul {
+    margin-bottom: 0;
+}
+
+.close {
+    text-align: end;
+    display: none;
+}
+
+.close .x-mark {
+    font-size: 25px;
+    color: var(--intermediate);
+} 
+
+.navbar ul li {
+    display: inline-block;
+    margin-left: 25px;
+    font-weight: 400;
+}
+
+.burges {
+    display: none;
+}
+
+.burges .burg {
+    font-size: 25px;
+    color: var(--primary);
+}
+
+@media (max-width: 576px) {
+    .navbar ul {
+        display: none;
+        position: fixed;
+        left: 0;
+        top: 0;
+        z-index: 10;
+        width: 400px;
+        height: 100vh;
+        background-color: var(--primary);
+        padding: 10px;
+        text-align: start;
+    }
+
+    .navbar ul li {
+        display: block;
+        margin-left: 0;
+        font-weight: 400;
+        line-height: 40px;
+    }
+
+    .close {
+        display: block;
+    }
+
+    .burges {
+        display: block;
+    }
+}
+
+@media (max-width: 428px) {
+    .navbar .logo h3 {
+        font-size: 18px !important;
+    }
+
+    .navbar .logo .uten {
+        font-size: 22px !important;
+    }
+}

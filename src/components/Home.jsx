@@ -65,7 +65,7 @@ function Home() {
 
     return (
         <div>
-            <header>
+            <header style={{overflowX: 'hidden'}}>
                 <div className="home-head">
                     <div className="head-text" data-aos='fade-right'>
                         <h1 data-aos='fade-up' data-aos-delay='1000' >Creativity.</h1>
@@ -108,7 +108,7 @@ function Home() {
                 </div>
             </header>
 
-            <main>
+            <main style={{overflowX: 'hidden', overflowY: 'hidden'}}>
                 <div className="kitchen-utensils">
                     <div className="kit-ute">
                         <img src={mainimg1} alt="" data-aos='zoom-in-right' />
